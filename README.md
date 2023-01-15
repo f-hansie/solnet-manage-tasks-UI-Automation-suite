@@ -5,7 +5,8 @@ The test are sitting on the cypress e2e folder, the page folder consists of the 
 
 ## Pre-requisites
 install cypress v.12 or latest
-npm install
+you will need java 8 installed on your system to be able to run the allure report
+=> run npm install, to install all dependencies for cypress and typescript
 *Before execute the automation tests you need to launch the angular app for manage tasks by running the commands  on the above instructions*
 
 ## Running the automtion test on Cypress test runner
@@ -14,8 +15,9 @@ npm install
 => select ETE Testing
 => select the browser of your choice to execute the tests, chrome or electron
 => ALL the tests for are sitting currently on the tests folder under E2E project folder
-=> click 'manage-user-tasks-spec' to execute the tests on cypress test runner
-=> after the test has done executing it will show the number of tests that ran pass or fail on test runner GUI 
+=> click 'manage-user-tasks-spec.cy' to execute the tests on cypress test runner
+=> after the test has done executing it will show the number of tests that ran showing the  pass or fail on test runner GUI 
 
-## Running the automtion test on command headless mode
-=> run command : ./node_modules/.bin/cypress run
+## Running the automtion test on command line on headless mode and generating the allure html report
+=> run  tests on command : npm run endtoend-ui-test
+=> opening the allure report after test execution: npm run allure:report 
