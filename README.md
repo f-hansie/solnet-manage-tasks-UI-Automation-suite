@@ -7,7 +7,7 @@ The test are sitting on the cypress e2e folder, the page folder consists of the 
 install cypress v.12 or latest
 you will need java 8 installed on your system to be able to run the allure report
 => run npm install, to install all dependencies for cypress and typescript
-*Before execute the automation tests you need to launch the angular app for manage tasks by running the commands  on the above instructions*
+## Before executing the cypress automation tests suite you need to launch the angular app for manage tasks on your local machine. 
 
 ## Running the automtion test on Cypress test runner
 => npx cypress open
