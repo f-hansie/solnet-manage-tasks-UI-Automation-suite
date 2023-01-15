@@ -8,22 +8,22 @@ module.exports = defineConfig({
   viewportWidth: 1200,
   defaultCommandTimeout: 8000,
 
+  reporters: [['allure', {
+    outputDir: './reports/allure-results/',
+    disableWebdriverStepsReporting: true,
+    disableWebdriverScreenshotsReporting: false,
+}]],
   
-
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
-      module.exports = (on, config) => {
-        allureWriter(on, config);
-        return config;
-    };
+      // require("cypress-mochawesome-reporter/plugin")(on)
+      allureWriter(on, config);
+      return config;
+    
   
     },
   },
+
+
 });
-
-
-
-
-
-
