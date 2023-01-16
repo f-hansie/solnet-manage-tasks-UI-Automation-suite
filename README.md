@@ -3,6 +3,9 @@
 ## Running Automation Testing for manage task App
 The test are sitting on the cypress e2e folder, the page folder consists of the page locators for the app and the test folder consist of the cypress spec test that includes all the scenarios or tests
 
+#Cloning the automation test suite:
+=> git clone https://github.com/f-hansie/solnet-manage-tasks-UI-Automation-suite.git
+
 ## Pre-requisites
 install cypress v.12 or latest
 you will need java 8 installed on your system to be able to run the allure report
